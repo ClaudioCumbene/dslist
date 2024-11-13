@@ -12,34 +12,23 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name= "tb_game")
 public class Game {
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> 5f4c34690008da88eea1045c0be2ec5a4eabba89
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
-<<<<<<< HEAD
 	
-=======
->>>>>>> 5f4c34690008da88eea1045c0be2ec5a4eabba89
 	@Column(name= "game_year")
 	private Integer year;
 	private String genre;
 	private String platforms;
 	private Double score;
 	private String imgUrl;
-<<<<<<< HEAD
 	
 	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
 	
 	@Column(columnDefinition = "TEXT")
-=======
-	private String shortDescription;
->>>>>>> 5f4c34690008da88eea1045c0be2ec5a4eabba89
 	private String longDescription;
 	
 	public Game() {
@@ -131,11 +120,7 @@ public class Game {
 	public void setLongDescription(String longDescription) {
 		this.longDescription = longDescription;
 	}
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> 5f4c34690008da88eea1045c0be2ec5a4eabba89
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -153,10 +138,7 @@ public class Game {
 		return Objects.equals(id, other.id);
 	}
 
-<<<<<<< HEAD
 	
 	
 
-=======
->>>>>>> 5f4c34690008da88eea1045c0be2ec5a4eabba89
 }
